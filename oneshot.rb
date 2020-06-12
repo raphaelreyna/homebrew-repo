@@ -6,10 +6,10 @@ class Oneshot < Formula
 
   if OS.mac?
     url "https://github.com/raphaelreyna/oneshot/releases/download/v0.6.0/oneshot_v0.6.0.darwin_x86_64"
-    sha256 "83ceee7a7c9295260152635d38b274e491c467a38d82231f063a662e5e48179a"
+    sha256 "68d0c8485b7e0ef229334708b06028e27c1d744aae08e6c22e93cce06cc40c36"
   elsif OS.linux?
     url "https://github.com/raphaelreyna/oneshot/releases/download/v0.6.0/oneshot_v0.6.0.linux_x86_64"
-    sha256 "55495f391196c981e91b471836f0f73a5c86e96ee0573be04eec137797880883"
+    sha256 "419c00d9749397d8a8894ae1a529583f067877556d0782df9faf96bc19b8601b"
   end
 
   def install
