@@ -2,24 +2,24 @@
 class EzCgi < Formula
   desc "A flexible and easy to use CGI HTTP server."
   homepage "https://github.com/raphaelreyna/ez-cgi/tree/master/cmd"
-  version "0.7.2"
+  version "0.7.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.2/ez-cgi_0.7.2.macos_x86_64.tar.gz"
-    sha256 "8d28f926579a0e18d58aaa04e0be7d575eed17ae089b8d6e6dffaf2d6224beda"
+    url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.3/ez-cgi_0.7.3.macos_x86_64.tar.gz"
+    sha256 "574bc7b9dbb8709f53f7839fa88424689fae81c14344d0f88a1d8edd1d3e6079"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.2/ez-cgi_0.7.2.linux_x86_64.tar.gz"
-      sha256 "0bf890c8295058dfe09e105db454a57923ee931c4f28baa9d39d4f6c08da00c1"
+      url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.3/ez-cgi_0.7.3.linux_x86_64.tar.gz"
+      sha256 "03915457cea8566374e2fb1a7b0cbbed5e1cfea3f6b608f0443478725c4b6c83"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.2/ez-cgi_0.7.2.linux_arm64.tar.gz"
-        sha256 "3092fe4406dba356cea25858dc455ab06225aa21671f5404b8bb0fef928a99fa"
+        url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.3/ez-cgi_0.7.3.linux_arm64.tar.gz"
+        sha256 "91dbe532dbb4e2ef893d27850d4c1d1c938f4499cc74e97ebaebb7cdf067ec36"
       else
-        url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.2/ez-cgi_0.7.2.linux_arm.tar.gz"
-        sha256 "f4bf5014f97a82a23159118eace1b981c3dac64f322ef171ad083da3af4930e2"
+        url "https://github.com/raphaelreyna/ez-cgi/releases/download/v0.7.3/ez-cgi_0.7.3.linux_arm.tar.gz"
+        sha256 "ab53b62de75ee5e04f43f581a5a90541a6b8f788417f62a5331b9bdac787a97a"
       end
     end
   end
