@@ -7,7 +7,7 @@ class Oneshot < Formula
 
   if OS.mac?
     url "https://github.com/raphaelreyna/oneshot/releases/download/v1.0.0/oneshot_v1.0.0.macos-x86_64.tar.gz"
-    sha256 "237abd2029e9972d85d81f077684f8bf4a937bc0672233b867325b6027ff3bda"
+    sha256 "b00768a73cee49d37d07bc986edb23da4cd962dbebefde16fe22a577fa24b881"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/raphaelreyna/oneshot/releases/download/v1.0.0/oneshot_v1.0.0.linux-x86_64.tar.gz"
