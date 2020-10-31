@@ -2,24 +2,24 @@
 class Oneshot < Formula
   desc "A single fire HTTP server."
   homepage "https://github.com/raphaelreyna/oneshot"
-  version "1.2.0"
+  version "1.3.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/raphaelreyna/oneshot/releases/download/v1.2.0/oneshot_1.2.0.macos-x86_64.tar.gz"
-    sha256 "f22140c7f36873b1e5ca00cc3587947dc124d44c013a22eecf87467cb1eef2a2"
+    url "https://github.com/raphaelreyna/oneshot/releases/download/v1.3.1/oneshot_1.3.1.macos-x86_64.tar.gz"
+    sha256 "716af9caf6393910e52998577ac8f8e7b2cd49904fe7fe2813f4ef8bfab7a760"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/raphaelreyna/oneshot/releases/download/v1.2.0/oneshot_1.2.0.linux-x86_64.tar.gz"
-      sha256 "eea35b2ff2f166c397ccf754a2b0af9b32793f8f5553473ded0109d579bec2ed"
+      url "https://github.com/raphaelreyna/oneshot/releases/download/v1.3.1/oneshot_1.3.1.linux-x86_64.tar.gz"
+      sha256 "dfe8ca4b99aa6bcfcb635a178710573f94c61311725e789b87485d6ed07cdfcc"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/raphaelreyna/oneshot/releases/download/v1.2.0/oneshot_1.2.0.linux-arm64.tar.gz"
-        sha256 "2dfe8f5ffbe0197e18c09ae9d40220403ee61ca0f8de4e66d83aa3cdf1ce496a"
+        url "https://github.com/raphaelreyna/oneshot/releases/download/v1.3.1/oneshot_1.3.1.linux-arm64.tar.gz"
+        sha256 "80d8a391906ca764654b64c74fb100db2b5fa9f6db3f9fa361b89a36d0a578b0"
       else
-        url "https://github.com/raphaelreyna/oneshot/releases/download/v1.2.0/oneshot_1.2.0.linux-arm.tar.gz"
-        sha256 "7c9a7abc3ec2ca29ee07b4c98f67ffd63fa287226a3ea699fa0392b2160f097f"
+        url "https://github.com/raphaelreyna/oneshot/releases/download/v1.3.1/oneshot_1.3.1.linux-arm.tar.gz"
+        sha256 "0052080354c0c830d7ed37a5a1837954f0770ae94b46e8daee8208a4f29a8cf3"
       end
     end
   end
